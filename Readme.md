@@ -4,9 +4,9 @@
 This repository is a colletion of custom github actions.
 
 ### Actions in this repository
-- NugetSetup.yml: Setup dotnet and the nuget cli tool.
+- [NugetSetup](#NugetSetup): Setup dotnet and the nuget cli tool.
 
-## NugetSetup.yml
+## NugetSetup
 
 Installs dotnet and the nuget package manager CLI.
 
