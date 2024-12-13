@@ -14,7 +14,7 @@ Installs dotnet and the nuget package manager CLI.
 ```yml
 jobs:
     - name: Install nuget
-      uses: <Insert repo here>
+      uses: jako5457/GhaTemplates/.github/workflows/NugetSetup.yml@main
       with:
         dotnet-version: 9.x
 ```
