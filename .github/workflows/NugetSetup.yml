@@ -1,0 +1,19 @@
+name: Setup Nuget package environment
+
+on:
+  workflow_call:
+    inputs:
+      dotnet-version:
+        required: true
+        type: string
+
+jobs:
+  Install-nuget:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: ${{ inputs.dotnet-version }}
+      - name: install nuget
+        run: sudo apt update && sudo apt install nuget
